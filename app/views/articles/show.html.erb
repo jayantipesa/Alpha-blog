@@ -6,7 +6,7 @@
             <div class="col-8 offset-2">
                 <div class="card text-center my-3 bg-white">
                     <div class="card-header font-italic">
-                        by Jayanti Pesa
+                        by <%= @article.user.username %>
                     </div>
                     <div class="card-body">
                         <div class="card-text text-left"><%= simple_format(@article.description) %></div>
